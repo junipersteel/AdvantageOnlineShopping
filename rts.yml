@@ -31,7 +31,7 @@ ssl:
 
 replay:
   simulateNewUser: true                 # If true, simulates a new Vuser in each iteration (relevant for closing connections).
-  saveSnapshots: "always"               # Specify when to save a snapshot file for WebRequest. Possible values are ["always", "error", "never"].
+  saveSnapshots: "error"                # Specify when to save a snapshot file for WebRequest. Possible values are ["always", "error", "never"].
   useCache: false                       # If true, resources response is cached, based on response headers.
   enableDynatrace: false                # Enable Dynatrace AppMon monitoring.
   resourceHttpErrorAsWarning: true      # If true, the log level WARNING is logged, if an issue occurs when obtaining the resource. If false, log level ERROR is logged if an issue occurs.
@@ -50,8 +50,8 @@ encryption:
 
 vuserLogger:                            # Configuration for Vuser logger
   errorBufferSize: 4096                 # The maximum buffer size for each Vuser logger.
-  logMode: full                         # Specify when to create the log file. Possible values are [full, error, none].
-  logLevel: trace                       # The log level for Vuser logger. Possible values are [error, warning, info, debug, trace].
+  logMode: error                        # Specify when to create the log file. Possible values are [full, error, none].
+  logLevel: error                       # The log level for Vuser logger. Possible values are [error, warning, info, debug, trace].
   showInConsole: true                   # If true, all the Vuser logging is printed to the console.
 
 flow:                                   #Flow Control definition, please refer to documentation for more details.
