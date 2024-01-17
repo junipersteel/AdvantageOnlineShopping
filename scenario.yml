@@ -2,5 +2,5 @@
 vusers: 10
 pacing: 5
 rampUp: 0
-duration: 20
+duration: 120
 tearDown: 0
